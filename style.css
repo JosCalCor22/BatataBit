@@ -1,0 +1,431 @@
+:root{
+    /*FONTS*/
+    --Primary-Font: 'DM Sans', sans-serif;
+    --Secondary-Font: 'Inter', sans-serif;
+    /*FONTS*/
+    /*COLORS*/
+    --Bitcoin-Orange: #F7931A;
+    --Soft-Orange: #FFE9D5;
+    --Dark-Black: #201E1C;
+    --Warm-Black: #282623;
+    --Off-White: #fAF7F8;
+    --Just-White: #FFFFFF;
+    --Gray: #BABABA;
+    /*COLORS*/
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: var(--Primary-Font);
+}
+body{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    width: 100%;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+/*DESACTIVE AN ELEMENT*/
+.inactive{
+    display: none;
+}
+/*DESACTIVE AN ELEMENT*/
+/*HEADER*/
+.header-main{
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    display: flex;
+    width: 85%;
+    gap: 24px;
+    margin: 40px 0 10px 0;
+    color: var(--Off-White);
+}
+.header-main h1{
+    font-size: 2.4rem;
+    line-height: 24px;
+    margin-top: 15px;
+}
+.header-main p{
+    font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: 400;
+}
+.button-header{
+    position: absolute;
+    top: 269px;
+    text-decoration: none;
+}
+.button-header button{
+    justify-content: space-evenly;
+    place-items: center;
+    display: flex;
+    height: 48px;
+    width: 229px;
+    border: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    background-color: var(--Off-White);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+/*HEADER*/
+/*MAIN CONTEINER*/
+.conteiner-main{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    padding: 30px 0 50px 0;
+    background-color: var(--Off-White);
+}
+.conteiner-main-image{
+    align-items: center;
+    display: flex;
+    width: 230px;
+    padding-top: 40px;
+}
+.conteiner-main-image img{
+    width: 100%;
+}
+.conteiner-main-title{
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    width: 85%;
+    gap: 20px;
+}
+.conteiner-main-title h2{
+    font-size: 2.4rem;
+    line-height: 26px;
+    font-weight: 700;
+}
+.conteiner-main-title p{
+    font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: 500;
+    color: #757575;
+}
+/*TABLE SECTION ORANGE*/
+/*TABLE SECTION ORANGE (THIS IS THE ONE WHO IS MIXED WITH OTHER SECTION)*/
+.table-currencies, .table-commissions{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin: 14px 0;
+    border-radius: 10px;
+    background-color: var(--Just-White);
+}
+.table-currencies ul, .table-commissions ul{
+    list-style: none;
+    width: 100%;
+}
+/*TABLE SECTION ORANGE (THIS IS THE ONE WHO IS MIXED WITH OTHER SECTION)*/
+.conteiner-main-table-prices{
+    place-items: center;
+    width: 65%;
+    position: relative;
+}
+.table-tittle{
+    display: flex;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding-left: 10px;
+    color: var(--Bitcoin-Orange);
+}
+.table-currencies ul li{
+    justify-content: space-between;
+    display: flex;
+    padding: 10px 10px;
+    font-size: 1.6rem;
+    color: #757575;
+    font-family: var(--Secondary-Font);
+    border: 1px solid rgba(250, 248, 247, 0.7);
+}
+.currency-price li span img{
+    background-repeat: no-repeat;
+}
+.arrow-right{
+    position: relative;
+    left: 30px;
+}
+.arrow-right img{
+    rotate: 270deg;
+}
+.table-upload{
+    text-align: center;
+    padding: 4px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    background-color: var(--Soft-Orange);
+}
+/*TABLE SECTION ORANGE*/
+/*TABLE SECTION BLUE*/
+.conteiner-main-table-commissions{
+    place-items: center;
+    width: 65%;
+    position: relative;
+}
+.table-tittle-2{
+    display: flex;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding-left: 10px;
+    color: #1A9AF7;
+}
+.table-commissions ul li{
+    padding: 10px 10px;
+    font-size: 1.6rem;
+    color: #757575;
+    font-family: var(--Secondary-Font);
+    border: 1px solid rgba(250, 248, 247, 0.7);
+}
+.currency-price-2 li{
+    text-align: center;
+}
+.arrow-left{
+    position: relative;
+    right: 40px;
+}
+.arrow-left img{
+    position: absolute;
+    rotate: 90deg;
+    top: 117px;
+}
+.table-upload-2{
+    text-align: center;
+    padding: 4px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    background-color: #E7F5FF;
+}
+/*TABLE SECTION BLUE*/
+/*MAIN CONTEINER*/
+/*SECTION BENEFITS*/
+.benefits-conteiner{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    gap: 18px;
+    padding: 40px 0 40px 0;
+    background-color: var(--Dark-Black);
+}
+.img-benefits{
+    position: absolute;
+}
+.img-benefits img{
+    position: relative;
+    bottom: 53px;
+    transform: scaleX(-1);
+}
+.benefits-tittle{
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    gap: 18px;
+    width: 85%;
+    margin: 0 auto;
+}
+.benefits-tittle h2{
+    font-size: 2.4rem;
+    line-height: 26px;
+    color: var(--Just-White);
+}
+.benefits-tittle p{
+    font-size: 1.4rem;
+    color: #808080;
+}
+.benefits-tip:nth-child(1){
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.benefits-tip{
+    margin: 0 auto;
+    width: 85%;
+    padding: 15px 10px;
+    border-radius: 4px;
+    background-color: var(--Warm-Black);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.benefits-tip p:nth-child(2){
+    font-weight: 700;
+    padding: 4px 0;
+    font-size: 1.4rem;
+    color: var(--Just-White);
+}
+.benefits-tip p:nth-child(3){
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #808080;
+}
+/*SECTION BENEFITS*/
+/*SECTION COMODIN*/
+.main-comodin-conteiner h2{
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--Just-White);
+}
+.comodin-conteiner-img{
+    width: 100%;
+    height: 50vh;
+    background-image: url(./assets/images/bitcoinbaby\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+/*SECTION COMODIN*/
+/*PROMOTION SECTION*/
+.promotion-section{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0;
+    background-color: var(--Off-White);
+}
+.tittle-promotion-section{
+    text-align: center;
+    width: 85%;
+    padding: 0 10px;
+}
+.tittle-promotion-section h2{
+    font-size: 2.4rem;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.tittle-promotion-section p{
+    font-size: 1.2rem;
+    color: #808080;
+}
+.deposit-card-promotion{
+    flex-flow: column;
+    align-items: center;
+    overflow: scroll;
+    display: flex;
+    gap: 30px;
+    height: 270px;
+    width: 100%;
+    padding: 20px 0;
+}
+.deposit-card-promotion::-webkit-scrollbar{
+    background-color: var(--Soft-Orange);
+    width: 5px;
+    height: 0;
+}
+.deposit-card-promotion::-webkit-scrollbar-thumb{
+    background-color: var(--Bitcoin-Orange);
+}
+.card-promotion-section{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    display: flex;
+    gap: 12px;
+    width: 65%;
+    height: 233px;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 24px 10px 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
+    background-color: var(--Just-White);
+}
+.card-promotion-buttom{
+    position: absolute;
+    font-weight: 500;
+    padding: 10px;
+    height: 35px;
+    top: -20px;
+    border-radius: 8px;
+    border: none;
+    color: var(--Just-White);
+    font-family: var(--Secondary-Font);
+    background-color: var(--Bitcoin-Orange);
+}
+.card-promotion-section p{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--Dark-Black);
+}
+.promotion-price{
+    display: flex;
+}
+.promotion-price h2{
+    letter-spacing: -4px;
+    font-size: 5.2rem;
+    font-family: var(--Secondary-Font);
+}
+.promotion-price span{
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 10px 3px 0 0;
+}
+#text-promotion-two{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #808080;
+}
+.choose-card-promotion{
+    align-items: center;
+    display: flex;
+    width: 150px;
+    height: 40px;
+    font-weight: 700;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    font-family: var(--Secondary-Font);
+    border: 2px solid var(--Bitcoin-Orange);
+}
+.choose-card-promotion span{
+    padding-top: 3px;
+}
+/*PROMOTION SECTION*/
+/*FOOTER*/
+footer{
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    padding: 30px 0;
+    background-color: var(--Bitcoin-Orange);
+}
+.info-footer ul{
+    flex-direction: column;
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
+.info-footer ul li a{
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--Just-White);
+}
+.logo-footer{
+    flex-direction: column;
+    display: flex;
+    gap: 12px;
+}
+.logo-footer:last-child{
+    width: 70px;
+}
+/*FOOTER*/
